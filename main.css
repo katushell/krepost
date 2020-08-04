@@ -260,7 +260,7 @@ span.violet{
         padding: 0px;
     }
 }
-/* @media screen and (max-width: 576px) {
+ @media screen and (max-width: 576px) {
     .video_3d h1 span {
         left: 5%;
         top: 5%;
@@ -338,5 +338,5 @@ span.violet{
         background-attachment: inherit;
         min-height: 450px;
         transform: translateY(65px);
-    } */
+    } 
 }
