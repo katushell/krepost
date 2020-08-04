@@ -13,6 +13,9 @@ h1{
     font-family: Poiret One;
     font-size: 64px;
     line-height: 91px;
+    margin-bottom: 140px;
+    color: #333;
+    z-index: 10;
 }
 
 h2{
@@ -27,6 +30,7 @@ h3{
     font-weight: 300;
     font-size: 36px;
     line-height: 51px;
+    color: #5B5656ж
 }
 h4{
     font-family: Poiret One;
@@ -39,7 +43,7 @@ p{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 24px;
-    color: #333333;
+    color: #5B5656
 }
 section{
     width: 100%;
@@ -109,6 +113,7 @@ section{
     height: 600px;
     padding-left: 170px;
     padding-right: 170px;
+    margin-top: 500px;
 }
 .pink-part{
     height: 750px;
@@ -125,11 +130,15 @@ section{
 .photo{
     background: url(content/krepost.png);
     background-size: cover;
-    height: 790px;
-    margin-top: 100px;
+    height: 831px;
+    margin-top: 300px;
 }
-.content_white{
-    margin-top: 820px;
+
+/* .white_text{
+    color: #fff;
+} */
+.mt-text{
+    margin-top: 50px;
 }
 .white{
     background: #FAFAFA;
@@ -140,26 +149,20 @@ section{
     grid-gap: 200px;
 }
 .photo1{
-    position:relative;
-    background-position:center;
-    background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    background-image: url(content/parallax.jpg);
+    background-image: url(content/para.png);
     background-size: cover;
     min-height: 657px;
     transform: translateY(0px);
     transition: 0.3s ease;
 }
 
-.photo2{
-    position:relative;
-    background-position:center;
-    background-size:cover;
+.photo2{  
     background-repeat:no-repeat;
     background-attachment:fixed;
-    background-image: url(content/pppp.jpg);
-    background-size: cover;
+    background-image: url(content/para.png);
+    background-size: contain;
     min-height: 657px;
 }
 #map{
@@ -192,11 +195,12 @@ span.violet{
 .anim-text{
     opacity: 0;
     transform: translateY(50px);
-    transition: 0.5s all ease-in-out;
+    transition: 0.7s all ease;
 }
 .anim-text_appear{
     opacity: 1;
 }
+
 
 
 @media only screen and (min-width: 577px) and (max-width: 768px){

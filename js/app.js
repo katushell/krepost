@@ -22,6 +22,31 @@ function scrollAppear2(){
 window.addEventListener('scroll', scrollAppear2)
 
 
+// function scrollAppear3(){
+//   let textes3 = document.querySelector('.price');
+//   let textesPos3 = textes3.getBoundingClientRect().top;
+//   let screenPos3 = window.innerHeight / 2;
+
+//   if(textesPos3 < screenPos3){
+//     textes3.classList.add('anim-text_appear')
+//   }
+// }
+// window.addEventListener('scroll', scrollAppear3)
+
+
+// function scrollAppear4(){
+//   let textes4 = document.querySelector('.time');
+//   let textesPos4 = textes4.getBoundingClientRect().top;
+//   let screenPos4 = window.innerHeight / 2.1;
+
+//   if(textesPos4 < screenPos4){
+//     textes4.classList.add('anim-text_appear')
+//   }
+// }
+
+// window.addEventListener('scroll', scrollAppear4)
+
+
 const intro = document.querySelector(".video_3d");
 const video = intro.querySelector("video");
 const text = intro.querySelectorAll(".dwn");
@@ -76,4 +101,4 @@ window.addEventListener("scroll", changeBG)
 
 
 
-
+var rellax = new Rellax('.rellax');
