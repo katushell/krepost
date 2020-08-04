@@ -298,11 +298,12 @@ span.violet{
         font-size: 18px;
     }
     .time {
+        margin-top: -355px;
         place-self: start;
     }
     .photo {
-        height: 255px;
-        margin-top: 0px;
+        height: 246px;
+        margin-top: -28px;
     }
     .content_white {
         margin-top: 158px;
@@ -312,11 +313,11 @@ span.violet{
     }
     .time {
         margin-top: -250px;
-      
+        order: 1
     }
     .price {
-      
-        margin-top: 0px;
+        margin-top: 350px;
+        order:0;
     }
     .container_text {
         grid-template-columns: 1fr;
@@ -339,4 +340,23 @@ span.violet{
         min-height: 450px;
         transform: translateY(65px);
     } 
+    .anim-text {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: none;
+    }
+    footer {
+        margin-top: 150px;
+        grid-template-columns: 1fr;
+        background: #879BE0;
+    }
+    .contacts-info {
+        padding: 0px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    .mt-120{
+        margin-top: 122px;
+    }
 }
