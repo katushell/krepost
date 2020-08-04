@@ -1,0 +1,288 @@
+ /* общие стили */
+ html, body {
+    overflow-x: hidden;
+}
+ body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #FFF1F4;
+    transition: all 0.6s ease;
+}
+h1{
+    font-family: Poiret One;
+    font-size: 64px;
+    line-height: 91px;
+}
+
+h2{
+    font-family: Poiret One;
+    font-size: 72px;
+    line-height: 84px;
+    color: #333333;
+    margin: 0;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 51px;
+}
+h4{
+    font-family: Poiret One;
+    font-size: 36px;
+    line-height: 136.1%;
+    color: #333333;
+    margin: 0;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #333333;
+}
+section{
+    width: 100%;
+}
+.container{
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+
+
+/* video styles */
+
+
+.video_3d h1 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    font-size: 72px;
+    line-height: 87px;
+    font-weight: 700;
+    color: #FFF7ED;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    width: 550px;
+    background-color:rgba(0,0,0,.3);
+    height:100%;
+    position:fixed;
+    width:100%;
+}
+
+.video_3d h1 span{
+    position: absolute;
+    left: 5%;
+    top: 1%;
+    width: 500px;
+    
+}
+.video_3d .down {
+    font-family: 'Poiret One', cursive;
+    bottom: 1%;
+    right: 5%;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.video_3d{
+    height: 100vh;
+}
+.video_3d video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* розовая секция  */
+
+.container_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 200px;
+    height: 600px;
+    padding-left: 170px;
+    padding-right: 170px;
+}
+.pink-part{
+    height: 750px;
+}
+.flex-elements{
+    display: flex;
+}
+.value{
+    padding-left: 40px;
+}
+.time{
+    place-self: end;
+} 
+.photo{
+    background: url(content/krepost.png);
+    background-size: cover;
+    height: 790px;
+    margin-top: 100px;
+}
+.content_white{
+    margin-top: 820px;
+}
+.white{
+    background: #FAFAFA;
+}
+.container_text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 200px;
+}
+.photo1{
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-image: url(content/parallax.jpg);
+    background-size: cover;
+    min-height: 657px;
+    transform: translateY(0px);
+    transition: 0.3s ease;
+}
+
+.photo2{
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-image: url(content/pppp.jpg);
+    background-size: cover;
+    min-height: 657px;
+}
+#map{
+    height: 429px;
+}
+footer{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #879BE0;
+}
+.contacts-info{
+    padding: 60px 120px;
+}
+.contacts{
+    display: flex;
+}
+.svg-tel{
+    margin: 40px 20px;
+}
+.svg-address{
+    margin: 50px 20px;
+}
+.price{
+    margin-top: 100px;
+}
+span.violet{
+    color: #5571D1;
+}
+.anim-text{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s all ease-in-out;
+}
+.anim-text_appear{
+    opacity: 1;
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    .container_info {
+        grid-gap: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .photo {
+        height: 489px;
+    }
+    .content_white {
+        margin-top: 520px;
+    }
+    .container_text {
+        grid-gap: 50px;
+    }
+    h1 {
+        font-size: 64px;
+        line-height: 72px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 130%;
+    }   
+    .photo1 {
+        min-height: 486px;
+    }
+    .photo2 {
+        min-height: 486px;
+    }
+    #map {
+        height: 376px;
+    }
+    .contacts-info {
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .video_3d h1 span {
+        left: 5%;
+        top: 5%;
+        width: 100%;
+    }
+    .video_3d h1 {
+        font-size: 52px;
+        line-height: 67px;
+    }
+    .container_info {
+        grid-gap: 0px;
+        grid-template-columns: 1fr;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    h1 {
+        font-family: Poiret One;
+        font-size: 36px;
+        line-height: 48px;
+    }
+    h2 {
+        font-size: 48px;
+        line-height: 36px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .time {
+        place-self: start;
+    }
+    .photo {
+        height: 229px;
+        margin-top: 0px;
+    }
+    .content_white {
+        margin-top: 158px;
+    }
+}
