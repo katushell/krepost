@@ -99,6 +99,4 @@ function changeBG() {
 }
 window.addEventListener("scroll", changeBG)
 
-
-
 var rellax = new Rellax('.rellax');
