@@ -297,13 +297,13 @@ span.violet{
     p{
         font-size: 18px;
     }
-    .time {
+    /* .time {
         margin-top: -355px;
         place-self: start;
-    }
+    } */
     .photo {
         height: 246px;
-        margin-top: -28px;
+        margin-top: 100px;
     }
     .content_white {
         margin-top: 158px;
@@ -312,7 +312,7 @@ span.violet{
         margin-top: 250px;
     }
     .time {
-        margin-top: -250px;
+        margin-top: -411px;;
         order: 1
     }
     .price {
@@ -358,5 +358,8 @@ span.violet{
     }
     .mt-120{
         margin-top: 122px;
+    }
+    .mt-text {
+        margin-top: 160px;
     }
 }
