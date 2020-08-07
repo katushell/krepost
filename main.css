@@ -181,8 +181,10 @@ section{
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-image: url(content/parallax.png);
-    background-size: contain;
+    background-size: cover;
     min-height: 657px;
+    transform: translateY(0px);
+    transition: 0.3s ease;
 }
 #map{
     height: 429px;
@@ -342,7 +344,7 @@ span.violet{
         height: 376px;
     }
     .contacts-info {
-        padding: 0px;
+        padding: 20px;
     }
     
 }
@@ -437,22 +439,16 @@ span.violet{
         background: #879BE0;
     }
     .contacts-info {
-        padding: 0px;
+        padding: 20px;
     }
     h4 {
-        font-size: 24px;
+        font-size: 16px;
     }
     .mt-120{
         margin-top: 122px;
     }
     .mt-text {
         margin-top: 160px;
-    }
-    .vk {
-        position: inherit;
-        margin-top: 2rem;
-        margin-left: 1rem;
-        cursor: pointer;
     }
 }
 
