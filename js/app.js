@@ -75,7 +75,5 @@ window.addEventListener("scroll", changeBG)
 
 // var rellax = new Rellax('.rellax');
 var rellax = new Rellax(".rellax", {
-  breakpoints: [200, 400, 600]
+  breakpoints: [576, 768, 1201]
 });
-
-
