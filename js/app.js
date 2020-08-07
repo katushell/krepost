@@ -79,17 +79,20 @@ var rellax = new Rellax(".rellax", {
 });
 
 
-function loadData() {
-  return new Promise((resolve, reject) => {
-    // setTimeout не является частью решения
-    // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
-    setTimeout(resolve, 2000);
-  })
-}
+// let preloaderEl = document.getElementById('preloader');
+// preloaderEl.classList.add('hidden');
+// window.onload = function() {
+//   preloaderEl.classList.remove('visible');
+// };
 
-loadData()
-  .then(() => {
-    let preloaderEl = document.getElementById('preloader');
-    preloaderEl.classList.add('hidden');
-    preloaderEl.classList.remove('visible');
-  });
+
+let preloaderEl = document.getElementById('preloader');
+function work() {  
+ preloaderEl.classList.remove('visible');
+preloaderEl.classList.add('hidden'); }
+
+if (document.readyState == 'loading') {
+  document.addEventListener('DOMContentLoaded', work);
+} else {
+  work();
+}
