@@ -194,7 +194,7 @@ footer{
     background: #879BE0;
 }
 .contacts-info {
-    padding: 60px 30px;
+    padding: 45px 30px;
 }
 .contacts{
     display: flex;
@@ -210,10 +210,10 @@ p.title{
     margin: 28px 20px;
 }
 .vk{
-    position: absolute;
-    right: 2rem;
-    margin-top: 4rem;
-    cursor: pointer;
+    margin: 28px 20px;
+}
+a{
+    text-decoration: none;
 }
 span.violet{
     color: #5571D1;
@@ -284,7 +284,7 @@ span.violet{
         grid-gap: 70px;
     }
     .contacts-info {
-        padding: 30px 60px;
+        padding: 45px 120px;
     }
     .container_info {
         grid-gap: 160px;
