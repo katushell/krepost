@@ -8,7 +8,8 @@
     box-sizing: border-box;
     background: #FFF1F4;
     transition: all 0.2s ease;
-    
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;    
 }
 .white{
     background-color: #ffffff;
@@ -40,7 +41,7 @@ h3{
 }
 h4{
     font-family: Poiret One;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 136.1%;
     color: #333333;
     margin: 0;
@@ -55,6 +56,7 @@ section{
     width: 100%;
 }
 .container{
+    width: 100%;
     padding-left: 65px;
     padding-right: 65px;
 }
@@ -75,7 +77,8 @@ section{
     background: inherit;
     overflow: hidden;
     width: 550px;
-    background-color:rgba(0,0,0,.3);
+    /* backdrop-filter: blur(20px); */
+    background-color: rgba(0,0,0,0.3);
     height:100%;
     position:fixed;
     width:100%;
@@ -119,6 +122,9 @@ section{
     padding-left: 170px;
     padding-right: 170px;
     margin-top: 700px;
+}
+.container_info_en{
+    display: none;
 }
 .pink-part{
     height: 750px;
@@ -186,17 +192,27 @@ footer{
     grid-template-columns: 1fr 1fr;
     background: #879BE0;
 }
-.contacts-info{
-    padding: 60px 120px;
+.contacts-info {
+    padding: 60px 30px;
 }
 .contacts{
     display: flex;
 }
+p.title{
+    font-size: 18px;
+    color: #333333;
+}
 .svg-tel{
-    margin: 40px 20px;
+    margin: 32px 20px;
 }
 .svg-address{
-    margin: 50px 20px;
+    margin: 28px 20px;
+}
+.vk{
+    position: absolute;
+    right: 2rem;
+    margin-top: 4rem;
+    cursor: pointer;
 }
 span.violet{
     color: #5571D1;
@@ -210,7 +226,218 @@ span.violet{
     opacity: 1;
 }
 
+.container_info_en{
+    display: none;
+ }
+/* @media screen and (min-width: 1920px) {
+    .container {
+        width: 1366px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+}  */
 
+@media only screen and (min-width: 1551px){
+    .container {
+        width: 1366px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+    .container_info {
+        height: 405px;
+    }
+}
+@media only screen and (min-width: 1454px) and (max-width: 1550px) {
+    .container {
+        width: 1280px;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+    .container_info {
+        height: 405px;
+    }
+}
+@media only screen and (min-width: 1420px) and (max-width: 1453px) {
+    .container {
+        width: 1280px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+    .container_info {
+        height: 405px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        grid-gap: 0px;
+    }
+}
+@media only screen and (min-width: 1397px) and (max-width: 1419px) {
+    .container {
+        width: 1280px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+    .container_info {
+        height: 405px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        grid-gap: 0px;
+    }
+}
+@media only screen and (min-width: 1389px) and (max-width: 1396px) {
+    .container {
+        width: 1240px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+    .container_info {
+        height: 405px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        grid-gap: 0px;
+    }
+}
+@media only screen and (min-width: 1362px) and (max-width: 1388px) {
+    .container {
+        width: 1240px;
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+    .container_info {
+        height: 405px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        grid-gap: 0px;
+    }
+}
+@media only screen and (min-width: 1351px) and (max-width: 1361px) {
+    .container {
+        width: 1240px;
+        padding-left: 4rem;
+        padding-right: 3rem;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+    .container_info {
+        height: 405px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        grid-gap: 0px;
+    }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1350px) {
+    .container {
+        width: 1230px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+    .container_info {
+        height: 405px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        grid-gap: 0px;
+    }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1349px) {
+    .container {
+        width: 1220px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .cont_photo {
+        height: 1025px;
+    }
+    .photo {
+        margin-top: 200px;
+    }
+    .contacts-info {
+        padding: 60px 120px;
+    }
+    .container_info {
+        height: 405px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        grid-gap: 0px;
+    }
+}
 @media only screen and (min-width: 1024px) and (max-width: 1199px){
     .photo {
         height: 660px;
@@ -274,6 +501,10 @@ span.violet{
     }
 }
  @media screen and (max-width: 576px) {
+    .video_3d video{
+        overflow:scroll;
+        -webkit-overflow-scrolling: touch;
+    }
     .video_3d h1 span {
         left: 5%;
         top: 5%;
@@ -373,4 +604,11 @@ span.violet{
     .mt-text {
         margin-top: 160px;
     }
+    .vk {
+        position: inherit;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
 }
+
