@@ -286,12 +286,26 @@ span.violet{
     .contacts-info {
         padding: 30px 60px;
     }
+    .container_info {
+        grid-gap: 160px;
+        height: 700px;
+        margin-top: 490px;
+    }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px){
     .container_info {
         grid-gap: 50px;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    container_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 159px;
+        height: 700px;
+        padding-left: 170px;
+        padding-right: 170px;
+        margin-top: 490px;
     }
     .container{
         padding-left: 30px;
@@ -333,6 +347,7 @@ span.violet{
     .contacts-info {
         padding: 0px;
     }
+    
 }
  @media screen and (max-width: 576px) {
     .video_3d video{
