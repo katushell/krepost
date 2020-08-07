@@ -78,3 +78,22 @@ var rellax = new Rellax(".rellax", {
   breakpoints: [200, 400, 600]
 });
 
+
+
+function myFunc() {
+  console.log(window.pageYOffset);
+  if (window.innerWidth > 1024 && window.pageYOffset > 3900) {
+    var all = document.getElementsByTagName("*");
+
+    for (var i=0, max=all.length; i < max; i++) {
+        var elem = all[i];
+        while (elem.attributes.length > 0)
+            elem.removeAttribute("data-rellax-percentage");
+    }
+    
+  }
+}
+
+myFunc();
+
+window.addEventListener('scroll', myFunc);
