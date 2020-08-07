@@ -232,7 +232,28 @@ span.violet{
 .container_info_en{
     display: none;
  }
+ #preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #000 url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center center;
+}
+  
+.visible {
+visibility: visible;
+opacity: 1;
+transition: opacity 2s linear;
+}
 
+.hidden {
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s 2s, opacity 2s linear;
+}
 
 @media screen and (min-width: 1360px) {
     .container {
@@ -359,8 +380,8 @@ span.violet{
         width: 100%;
     }
     .video_3d h1 {
-        font-size: 48px;
-        line-height: 67px;
+        font-size: 36px;
+        line-height: 50px;
     }
     .container_info {
         grid-gap: 0px;
@@ -442,7 +463,7 @@ span.violet{
         padding: 20px;
     }
     h4 {
-        font-size: 16px;
+        font-size: 12px;
     }
     .mt-120{
         margin-top: 122px;
