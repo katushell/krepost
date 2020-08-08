@@ -1,3 +1,4 @@
+
 function scrollAppear(){
   let textes = document.querySelector('h3');
   let textesPos = textes.getBoundingClientRect().top;
@@ -24,6 +25,17 @@ window.addEventListener('scroll', scrollAppear2)
 const intro = document.querySelector(".video_3d");
 const video = intro.querySelector("video");
 const text = intro.querySelectorAll(".dwn");
+
+
+var isMobile = {
+  Android:        function() { return navigator.userAgent.match(/Android/i) ? true : false; },
+  BlackBerry:     function() { return navigator.userAgent.match(/BlackBerry/i) ? true : false; },
+  iOS:            function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false; },
+  Windows:        function() { return navigator.userAgent.match(/IEMobile/i) ? true : false; },
+  any:            function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  }
+};
+
+if ( !isMobile.any() ) {
 
 //SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
@@ -63,6 +75,9 @@ setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
   video.currentTime = delay;
 }, 50);
+
+
+}
 
 
 function changeBG() {
