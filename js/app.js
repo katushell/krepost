@@ -79,13 +79,6 @@ var rellax = new Rellax(".rellax", {
 });
 
 
-// let preloaderEl = document.getElementById('preloader');
-// preloaderEl.classList.add('hidden');
-// window.onload = function() {
-//   preloaderEl.classList.remove('visible');
-// };
-
-
 let preloaderEl = document.getElementById('preloader');
 function work() {  
  preloaderEl.classList.remove('visible');
